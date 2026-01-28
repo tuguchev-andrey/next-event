@@ -345,7 +345,7 @@ sudo certbot --nginx -d YOUR_DOMAIN
 ```
 
 
-**#16 Install latest version of Node.js**
+**#16 Install latest version of Node.js by executing these 3 commands:**
 [Commands from "Install Node.js documentation"](https://nodejs.org/en/download/package-manager)
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
@@ -361,7 +361,17 @@ nvm list-remote
 
 **#17 Find the latest LTS version of the node available and install it using command like this:**
 ```bash
-nvm install v22.11.0
+nvm install v22.22.0
+```
+
+##### Switch to newly installed Node.js version:
+```bash
+nvm use 22.22.0
+```
+
+##### Set newly installed Node.js version as the default:
+```bash
+nvm alias default 22.22.0
 ```
 
 ##### verify the right Node.js version is in the environment
@@ -369,14 +379,14 @@ nvm install v22.11.0
 node -v
 ```
 ###### should print:
-`v22.11.0`
+`v22.22.0`
 
 #####  verify the right npm version is in the environment
 ```bash
 npm -v
 ```
 ###### should print 
-`10.9.0`
+`10.9.4`
 
 **#18 Install PM2 (the process manager for Node.js applications).**
 PM2 basically manages applications (run them in the background as a service). 
