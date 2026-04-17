@@ -1,4 +1,3 @@
-// EventForm/index.tsx
 'use client';
 
 import { useCallback } from 'react';
@@ -138,7 +137,6 @@ const EventForm = ({
   );
 };
 
-// Helper function
 function getInitialValues(event: IEvent | undefined, type: string) {
   if (event && type === 'Update') {
     return {
